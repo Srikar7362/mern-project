@@ -78,7 +78,7 @@ const CarsModel = require("./models/Cars");
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({origin:"http://mern-project-m4og.vercel.app"));
 
 mongoose.connect("mongodb://127.0.0.1:27017/employee", {
   useNewUrlParser: true,
