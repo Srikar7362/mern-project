@@ -14,7 +14,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("back-end-phi-virid.vercel.app", {
+      const response = await axios.post("back-end-phi-virid.vercel.app/login", {
         email,
         password,
       });
